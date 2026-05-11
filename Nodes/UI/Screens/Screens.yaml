@@ -1,2 +1,8 @@
 Name: Screens
 Type: ScreensCategoryFolder
+Children:
+- Name: Padre
+  Id: g=fcb97b7795ff65cfa34d668700120e3b
+  Supertype: Screen
+  ReferenceType: HasComponent
+- File: AlarmWidgets/AlarmWidgets.yaml
