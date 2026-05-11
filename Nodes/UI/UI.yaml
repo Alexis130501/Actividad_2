@@ -684,6 +684,21 @@ Children:
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: Panel2
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/Actividad_2/UI/Paginas/Dashboard_"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
     - Name: CurrentPanel
       Type: NodePointer
       DataType: NodeId
@@ -720,6 +735,11 @@ Children:
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
 - File: Screens/Screens.yaml
