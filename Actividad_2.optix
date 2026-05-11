@@ -74,15 +74,39 @@ Project:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
    Version: 4.0
+  19:
+   Uri: 'urn:FTOptix:EventLogger'
+   Module: FTOptix.EventLogger
+   Version: 2.0
+  20:
+   Uri: 'urn:FTOptix:EventLogger:Net'
+   Module: FTOptix.EventLogger.Net
+   Version: 1.0
+  21:
+   Uri: 'urn:FTOptix:Store'
+   Module: FTOptix.Store
+   Version: 2.0
+  22:
+   Uri: 'urn:FTOptix:Store:Net'
+   Module: FTOptix.Store.Net
+   Version: 1.0
+  23:
+   Uri: 'urn:FTOptix:SQLiteStore'
+   Module: FTOptix.SQLiteStore
+   Version: 1.0
+  24:
+   Uri: 'urn:FTOptix:SQLiteStore:Net'
+   Module: FTOptix.SQLiteStore.Net
+   Version: 1.0
  Statistics:
-  TotalNodeCount: 10550
-  Objects: 2294
-  ObjectTypes: 44
-  Variables: 8183
+  TotalNodeCount: 10878
+  Objects: 2351
+  ObjectTypes: 45
+  Variables: 8453
   VariableTypes: 0
   DataTypes: 0
   Methods: 29
-  References: 59
+  References: 78
   ReferenceTypes: 0
   Files: 25
  Nodes:
