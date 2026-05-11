@@ -1,0 +1,156 @@
+Name: Alarms
+Id: g=3293e7cd8de0bb06cc725e017a984470
+Type: AlarmsCategoryFolder
+Children:
+- Name: DigitalAlarm1
+  Id: g=61c02e7ec3a374766b819b454442fbc7
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=86bb3e91f1b448fc2cfbf2f063997d27
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=9f016c10c82555117191638d5b58e1c6
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=296318754edfe6d8c9d6e188f1d0ab7d
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Motor1Alarm "
+      Children:
+      - Name: Mode
+        Id: g=4ca62aadd4df722ab6d0951268b705a7
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=9a6a6d298098af4e37207bc21487ad08
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=8;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=c6ba59c522691f7c45a84c8e8122aa53
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Motor1 Alarm"}
+  - Name: AutoConfirm
+    Id: g=2d79cb2f9fa5e7320264afe9606b2399
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+- Name: 'AnalogAlarm '
+  Id: g=1ffdb48c9faffab0cead2f9e2af58b2d
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=d681cc7345607e66f3592df24c26260d
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=5267a74ea299e8ed07e28c2591d1b5f0
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Temperature"
+      Children:
+      - Name: Mode
+        Id: g=ef405e4cc11d2bf83ba1cf6e48376f58
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=2c7c20dcc57ae7dc16676aa396881a16
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=8;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=8;i=154
+    Direction: Forward
+  - Name: HighLimit
+    Id: g=73a348fbe1a9999e08a00bc30e3311fa
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 80.0
+  - Name: Message
+    Id: g=68d5faa93dd7d8b636505a8eaa5d1602
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: HighStateMessage
+      Id: g=015f32613d3b7bafd157ac10298b8e37
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Temperature is High"}
+  - Name: AutoConfirm
+    Id: g=9080e6b4fe19a113c59f28ade1035d28
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
